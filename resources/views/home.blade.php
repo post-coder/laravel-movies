@@ -4,9 +4,9 @@
 
 <div class="row">
 
-  @foreach($movies as $movie)
+  @foreach($albums as $album)
     <div class="col-4 p-3">
-      {{$movie->title}} ({{$movie->original_title}})
+      <strong>{{$album->title}}</strong> ({{$album->artist}})
     </div>  
   @endforeach
 

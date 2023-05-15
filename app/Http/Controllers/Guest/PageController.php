@@ -3,7 +3,7 @@
 namespace App\Http\Controllers\Guest;
 
 use App\Http\Controllers\Controller;
-use App\Models\Movie;
+use App\Models\Album;
 use Illuminate\Http\Request;
 
 class PageController extends Controller
@@ -11,13 +11,13 @@ class PageController extends Controller
     public function index() {
         // prenderà i dati dalla tabella del db
         // li salverà in un array
-        $movies = Movie::all();
+        $albums = Album::all();
 
-        // dd($movies);
+        // dd($albums);
 
         // li passerò alla view
         
 
-        return view('home', compact('movies'));
+        return view('home', compact('albums'));
     }
 }
